@@ -88,16 +88,12 @@ section {
 
 
 .navbar__menu ul {
-    margin: 20;
     text-align: center;
 }
 
 .navbar__menu li {
     display: inline-block;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 16px;
-    margin-right: 16px;
+    padding: 16px;
     text-decoration: none;
 }
 
@@ -106,10 +102,18 @@ section {
 }
 
 
-.navbar__menu .menu__link:hover {
+.active,.navbar__menu .menu__link:hover {
     color: #a8a8a8;
-    transition: ease 0.3s all;
+    transition: ease 0.5s all;
     cursor: pointer;
+}
+
+
+.active, .your-active-class{
+  background-color: #f8f8f8;
+  transition: ease 0.5s all;
+  border-radius: 10px;
+
 }
 
 /* Header Styles */
@@ -154,7 +158,3 @@ section:nth-of-type(even) .landing__container {
     margin-left: auto;
     text-align: left;
 }
-
-/* Background Circles */
-/* Note that background circles are created with psuedo elements before and after */
-/* Circles appear to be random do to use of :nth-of-type psuedo class */
