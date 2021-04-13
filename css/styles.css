@@ -89,12 +89,14 @@ section {
 
 .navbar__menu ul {
     text-align: center;
+      margin: 8px;
 }
 
 .navbar__menu li {
     display: inline-block;
-    padding: 16px;
+    padding: 8px;
     text-decoration: none;
+    margin: 0px;
 }
 
 .navbar__menu li :checked {
@@ -109,7 +111,7 @@ section {
 }
 
 
-.active, .your-active-class{
+.active,.your-active-class{
   background-color: #f8f8f8;
   transition: ease 0.5s all;
   border-radius: 10px;
