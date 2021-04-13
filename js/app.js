@@ -44,12 +44,14 @@ window.addEventListener("scroll",function () {
 
 // Scroll to anchor ID using scrollTO event
 
-element.addEventListener(click,scroll)
+sections.addEventListener("click", scroll);
 function scroll() {
   const sections = document.querySelectorAll("section");
   sections.scrollIntoView();
 
 }
+
+
 
   document.getElementById("navbar__list").addEventListener("click", section);
 // Add class 'active' to section when it is near top of viewport
