@@ -161,9 +161,6 @@ section {
     }
 }
 
-section{
-  margin-top: 40px;
-}
 
 section:nth-of-type(even) .landing__container {
     margin-right: 0;

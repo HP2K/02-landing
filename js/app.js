@@ -37,11 +37,12 @@ window.addEventListener("scroll", function () {
   if (section.getBoundingClientRect().top < window.innerHeight) {
      section.classList.add("active__section");
   }
-  if (section.getBoundingClientRect().top > window.innerHeight) {
+  if (section.getBoundingClientRect().bottom > window.innerHeight) {
       section.classList.remove("active__section");
   }
 }
 });
+
 
 
 
