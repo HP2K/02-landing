@@ -111,11 +111,17 @@ section {
 }
 
 
-.active,.your-active-class{
+
+.active, .active__section{
   background-color: #f8f8f8;
   transition: ease 0.5s all;
   border-radius: 10px;
+}
 
+.active, .your-active-class{
+  background-color: #f8f8f8;
+  transition: ease 0.5s all;
+  border-radius: 10px;
 }
 
 /* Header Styles */
@@ -153,6 +159,10 @@ section {
         max-width: 50em;
         padding: 4em;
     }
+}
+
+section{
+  margin-top: 40px;
 }
 
 section:nth-of-type(even) .landing__container {

@@ -32,22 +32,19 @@ for (var i = 0; i < navbarItem.length; i++) {
   });
 }
 
-
-
-for (var i = 0; i < sections.length; i++) {
-  sections[i].addEventListener("scroll", function() {
-  const current = document.getElementsByClassName("your-active-class");
-  current[0].className = current[0].className.replace(" your-active-class", "");
-  this.className += " your-active-class";
-  });
-}
-
-
 window.addEventListener("scroll", function () {
-  if (sections.getBoundingClientRect().top < window.innerHeight) {
-     sections.style.background = "#f8f8f8"
+  for(section of sections){
+  if (section.getBoundingClientRect().top < window.innerHeight) {
+     section.classList.add("active__section");
   }
+  if (section.getBoundingClientRect().top > window.innerHeight) {
+      section.classList.remove("active__section");
+  }
+}
 });
+
+
+
 
 
 
