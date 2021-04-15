@@ -21,9 +21,7 @@ function buildingNav(){
 buildingNav();
 
 
-// Add class 'active' to section when near top of viewport
-
-
+// Add class 'active' navbaritem
 for (var i = 0; i < navbarItem.length; i++) {
   navbarItem[i].addEventListener("click", function() {
   const current = document.getElementsByClassName("your-active-class");
@@ -32,6 +30,8 @@ for (var i = 0; i < navbarItem.length; i++) {
   });
 }
 
+
+// Scroll to anchor ID using scrollTO event
 window.addEventListener("scroll", function () {
   for(section of sections){
   if (section.getBoundingClientRect().top < window.innerHeight) {

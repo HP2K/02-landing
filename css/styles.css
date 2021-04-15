@@ -113,13 +113,14 @@ section {
 
 
 .active, .active__section{
-  background-color: #f8f8f8;
+
+  background-color: yellow;
   transition: ease 0.5s all;
   border-radius: 10px;
 }
 
 .active, .your-active-class{
-  background-color: #f8f8f8;
+  background-color: yellow;
   transition: ease 0.5s all;
   border-radius: 10px;
 }
