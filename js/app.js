@@ -1,7 +1,7 @@
 // Global Variables
 const navbarMenu = document.getElementById("navbar__list");
-var sections = document.querySelectorAll("section");
-var navbarItem = document.getElementsByClassName('menu__link')
+let sections = document.querySelectorAll("section");
+let navbarItem = document.getElementsByClassName('menu__link')
 
 
 // Building navigation
@@ -22,7 +22,7 @@ buildingNav();
 
 
 // Add class 'active' navbaritem
-for (var i = 0; i < navbarItem.length; i++) {
+for (let i = 0; i < navbarItem.length; i++) {
   navbarItem[i].addEventListener("click", function() {
   const current = document.getElementsByClassName("your-active-class");
   current[0].className = current[0].className.replace(" your-active-class", "");
